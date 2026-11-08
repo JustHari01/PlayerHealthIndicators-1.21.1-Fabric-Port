@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "healthindicators",
+  "version": "${version}",
+
+  "name": "Player Health Indicators (UNOFFICIAL 1.21.1 Port)",
+  "description": "Unofficial Fabric port for Minecraft 1.21.1. Displays other players' current health and absorption as floating hearts, with keybinds for visibility, stacking, and vertical offset.",
+  "authors": [
+    "Gaider10 (original author)",
+    "JustHari01 (compatibility port)"
+  ],
+
+  "contact": {
+    "homepage": "https://github.com/JustHari01/PlayerHealthIndicators-1.21.1-Fabric-Port",
+    "sources": "https://github.com/JustHari01/PlayerHealthIndicators-1.21.1-Fabric-Port",
+    "issues": "https://github.com/JustHari01/PlayerHealthIndicators-1.21.1-Fabric-Port/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/healthindicators/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "me.andrew.healthindicators.HealthIndicatorsMod"
+    ]
+  },
+  "mixins": [
+    "healthindicators.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.116.17"
+  }
+}
